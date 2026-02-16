@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         ParkingFloorFindingStrategy strategy = new NearestParkingSpotStrategy();
+        Observers observers = new ParkingLotBoard();
 
         // Floor 1 spots
         List<ParkingSpot> floor1Spots = new ArrayList<>();
@@ -26,6 +27,7 @@ public class Main {
 
         // Get parking lot instance
         ParkingLot parkingLot = ParkingLot.getInstance(floors);
+        parkingLot.addObserver(observers);
 
         // Create vehicles
         Vehicle car = new Vehicle("KA01AB1234", VehicleType.CAR);

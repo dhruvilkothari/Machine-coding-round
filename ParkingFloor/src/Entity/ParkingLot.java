@@ -1,24 +1,23 @@
 package Entity;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import Enum.*;
 import Strategy.PaymentStrategy;
 import Strategy.UpiPaymentStrategy;
 
-public class ParkingLot {
+public class ParkingLot implements Subject {
     private static ParkingLot instance;
     private Map<String , Ticket> tickets ;
     private List<ParkingFloor>parkingFloors;
     private PaymentStrategy  paymentStrategy;
+    private List<Observers>observersList;
 
     private ParkingLot(List<ParkingFloor>parkingFloors){
         this.parkingFloors = parkingFloors;
         tickets = new ConcurrentHashMap<>();
         paymentStrategy = new UpiPaymentStrategy();
+        observersList = new ArrayList<>();
     }
     public static ParkingLot getInstance(List<ParkingFloor>parkingFloors){
         synchronized (ParkingLot.class){
@@ -59,8 +58,25 @@ public class ParkingLot {
 
         parkingSpot.setSpotStatus(SpotStatus.AVAILABLE);
         parkingSpot.setVehicle(null);
+        notifyObserver();
 
         tickets.remove(license);
     }
 
+    @Override
+    public void addObserver(Observers observers) {
+        observersList.add(observers);
+    }
+
+    @Override
+    public void removeObserver(Observers observers) {
+        observersList.remove(observers);
+    }
+
+    @Override
+    public void notifyObserver() {
+        for (Observers obj: observersList){
+            obj.notifyObserver("Parking Lot has new Space");
+        }
+    }
 }
