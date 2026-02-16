@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlightBookingSystem/FlightBookingSystem.iml" filepath="$PROJECT_DIR$/FlightBookingSystem/FlightBookingSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParkingFloor/ParkingFloor.iml" filepath="$PROJECT_DIR$/ParkingFloor/ParkingFloor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/machine-coding.iml" filepath="$PROJECT_DIR$/.idea/machine-coding.iml" />
     </modules>
