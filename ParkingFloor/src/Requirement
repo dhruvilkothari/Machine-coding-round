@@ -1,0 +1,11 @@
+Design a Parking Lot System that can:
+
+Park a vehicle.
+
+Remove a vehicle.
+
+Check if a vehicle is parked.
+
+Find the nearest available parking spot.
+
+The system should support multiple types of vehicles and parking spots.
