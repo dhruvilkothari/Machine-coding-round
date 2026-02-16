@@ -8,6 +8,7 @@ public class Seat {
     private SeatType seatType;
     private SeatStatus seatStatus;
     private int price;
+    private ReentrantLock reentrantLock = new ReentrantLock();
 
 
     public String getId() {
@@ -36,4 +37,7 @@ public class Seat {
         this.seatStatus =  seatStatus;
     }
 
+    public ReentrantLock getReentrantLock() {
+        return reentrantLock;
+    }
 }

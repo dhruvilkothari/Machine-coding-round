@@ -1,11 +1,19 @@
 package Entity;
 import Enum.*;
+
+import java.util.List;
+
 public class Booking {
     private final String id;
     private final String userId;
     private final Flight flight;
-    private final BookingStatus bookingStatus;
+    private  BookingStatus bookingStatus;
     private final int price;
+    private final List<Seat>seats;
+
+    public List<Seat> getSeats() {
+        return seats;
+    }
 
     public String getId() {
         return id;
@@ -26,19 +34,16 @@ public class Booking {
     public int getPrice() {
         return price;
     }
-
-    public Seat getSeat() {
-        return seat;
-    }
-
-    private final Seat seat;
-
-    public Booking(String id, String userId, Flight flight, BookingStatus bookingStatus, int price, Seat seat) {
+    public Booking(String id, String userId, Flight flight, BookingStatus bookingStatus, int price, List<Seat> seats) {
         this.id = id;
         this.userId = userId;
         this.flight = flight;
         this.bookingStatus = bookingStatus;
         this.price = price;
-        this.seat = seat;
+        this.seats = seats;
+    }
+
+    public void setBookingStatus(BookingStatus bookingStatus) {
+        this.bookingStatus =  bookingStatus;
     }
 }
