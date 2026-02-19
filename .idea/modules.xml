@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chess/Chess.iml" filepath="$PROJECT_DIR$/Chess/Chess.iml" />
       <module fileurl="file://$PROJECT_DIR$/FlightBookingSystem/FlightBookingSystem.iml" filepath="$PROJECT_DIR$/FlightBookingSystem/FlightBookingSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/Food Delivery System/Food Delivery System.iml" filepath="$PROJECT_DIR$/Food Delivery System/Food Delivery System.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotificationSystem/NotificationSystem.iml" filepath="$PROJECT_DIR$/NotificationSystem/NotificationSystem.iml" />
