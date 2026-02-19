@@ -1,7 +1,7 @@
 public class SimpleNotification extends Notification {
     private String text;
 
-    public SimpleNotification(String text){
+    public SimpleNotification(String text) {
         this.text = text;
     }
 
