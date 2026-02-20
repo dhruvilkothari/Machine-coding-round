@@ -11,7 +11,6 @@ public class Board {
         this.initializeStrategy = initializeStrategy;
         initializeGame();
     }
-
     private void initializeGame() {
         initializeStrategy.initGame(board);
     }
