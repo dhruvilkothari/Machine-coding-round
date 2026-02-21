@@ -1,7 +1,5 @@
 package Entity;
 
-import Entity.Enum.BookingStatus;
-
 public class Booking {
     private final Long id;
     private final Long userId;

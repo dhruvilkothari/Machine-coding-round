@@ -1,8 +1,5 @@
 package Entity;
 
-import Entity.Enum.BookingStatus;
-import Entity.Enum.CarType;
-import Entity.Enum.SearcStrategyEnum;
 import Strategy.LowestPriceSearchStrategy;
 import Strategy.SearchStrategy;
 

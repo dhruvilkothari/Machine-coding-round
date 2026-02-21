@@ -1,4 +1,4 @@
-package Entity.Enum;
+package Entity;
 
 public enum SearcStrategyEnum {
     LOWEST , PREMIUM,

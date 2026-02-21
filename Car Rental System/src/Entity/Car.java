@@ -1,8 +1,6 @@
 package Entity;
 
 
-import Entity.Enum.CarType;
-
 public class Car {
     private final Long id;
     private final String name;

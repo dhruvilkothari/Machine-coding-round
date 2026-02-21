@@ -2,9 +2,8 @@ package Strategy;
 
 import Entity.BookingInterval;
 import Entity.Car;
-import Entity.Enum.CarType;
+import Entity.CarType;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LowestPriceSearchStrategy implements SearchStrategy {

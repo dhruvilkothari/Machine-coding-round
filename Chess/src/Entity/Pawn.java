@@ -1,6 +1,5 @@
 package Entity;
 
-import Entity.Enum.PieceType;
 import Strategy.MovementStrategy;
 
 public class Pawn extends Piece {

@@ -1,8 +1,8 @@
 import Entity.Booking;
 import Entity.BookingInterval;
 import Entity.Car;
-import Entity.Enum.CarType;
-import Entity.Enum.SearcStrategyEnum;
+import Entity.CarType;
+import Entity.SearcStrategyEnum;
 import Entity.Warehouse;
 
 import java.util.HashMap;

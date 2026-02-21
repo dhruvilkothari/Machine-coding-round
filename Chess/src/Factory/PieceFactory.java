@@ -1,7 +1,7 @@
 package Factory;
 
 import Entity.Cell;
-import Entity.Enum.PieceType;
+import Entity.PieceType;
 import Entity.Pawn;
 import Entity.Piece;
 import Strategy.MovementStrategy;
