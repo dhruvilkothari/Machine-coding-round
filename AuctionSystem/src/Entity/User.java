@@ -1,20 +1,14 @@
 package Entity;
 
-public class User {
-    private final Long id;
+public class User extends Id<Long> {
     private final String name;
-
-    public Long getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
     }
 
     public User(Long id, String name){
 
-        this.id = id;
+        super(id);
         this.name = name;
     }
 
